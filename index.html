@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
 
+    <!-- icons and fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- My static files -->
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -13,19 +16,30 @@
     <div class="container">
         <!-- My sidebar -->
         <div class="sidebar">
-            <h1>My dashboard</h1>
-            <ul>
-                <li>Main</li>
-                <li>Profiles</li>
-                <li>My Lists</li>
-                <li>Inventory</li>
-                <li>Balance</li>
-                <li>Analytics</li>
-            </ul>
-            <ul>
-                <li>Settings</li>
-                <li>Add Field</li>
-            </ul>
+            <div class="sidebar-title">
+                <h1><i class="fa-solid fa-image"></i> My dashboard</h1>
+            </div>
+            <div class="sidebar-list">
+                <ul>
+                    <li> <i class="fa-solid fa-image"></i> Main</li>
+                    <li> <i class="fa-solid fa-image"></i> Profiles</li>
+                    <li> <i class="fa-solid fa-image"></i> My Lists</li>
+                    <li> <i class="fa-solid fa-image"></i> Inventory</li>
+                    <li> <i class="fa-solid fa-image"></i> Balance</li>
+                    <li> <i class="fa-solid fa-image"></i> Analytics</li>
+                </ul>
+            </div>
+            <div class="sidebar-list">
+                <ul>
+                    <li> <i class="fa-solid fa-image"></i> Settings</li>
+                    <li> <i class="fa-solid fa-image"></i> Add Field</li>
+                </ul>
+            </div>
+            <div class="sidebar-list logout">
+                <ul>
+                    <li> <i class="fa-solid fa-image"></i> Logout</li>
+                </ul>
+            </div>
         </div>
 
         <!-- Header -->
