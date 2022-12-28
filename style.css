@@ -1,7 +1,7 @@
 
 * {
-    /* border: 1px solid red; */ /* testing */
-    /* background-color: rgba(0, 0, 0, 0.2); */ /* testing */
+    /* border: 1px solid red; */
+    /* background-color: rgba(0, 0, 0, 0.2); */
     box-sizing: border-box; /* full height window */
     margin: 0; /* full height window */
     padding: 0; /* full height window */
@@ -71,7 +71,109 @@ ul {
     background-color: burlywood; /* testing */
     grid-row: 1;
     grid-column: 2 / -1;
+    /* grid container */
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1.5fr;
 }
+/* Searchbar style */
+.header .searchbar {
+    padding: 15px;
+    padding-left: 50px;
+    font-size: 20px;
+    /* flex container */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.header .searchbar input {
+    margin-left: 10px;
+    padding: 5px 15px;
+    width: min(900px, 80%);
+    height: 35px;
+    border-radius: 30px;
+    font-size: 16px;
+}
+/* Profile style */
+.header .profile {
+    text-align: center;
+    /* grid container */
+    display: grid;
+    grid-template-columns:1fr 1fr 2fr;
+    place-content: center;
+}
+.profile :nth-child(1) {
+    place-self: center;
+    /* padding-left: 50px; */
+    
+}
+.profile :nth-child(2) {
+    justify-self: start;
+    align-self: center;
+}
+.profile :nth-child(3) {
+    align-self: center;
+    justify-self: start;
+}
+.fit {
+    border-radius: 100%;
+    object-fit: cover;
+    /* grid item */
+    place-content: center;
+}
+.profile .fit {
+    height: 50px;
+    width: 50px;
+}
+.profile-title {
+    padding: 10px;
+    /* grid container */
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+/* profile title */
+.profile-title .fit {
+    height: 90px;
+    width: 90px;
+    /* grid item */
+    grid-row: 1 / -1;
+    justify-self: center;
+}
+.profile-title p {
+    margin-bottom: 5px;
+}
+.profile-title :nth-child(2) {
+    /* grid item */
+    grid-column: 2;
+    align-self: end;
+}
+.profile-title :nth-child(3) {
+    /* grid item */
+    grid-column: 2;
+    grid-row: 2;
+    align-self: start;
+}
+/* buttons section */
+.header-buttons {
+    /* grid container */
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+.header-buttons .profile-buttons {
+    /* grid item */
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+    justify-self: start;
+}
+.profile-buttons button {
+    padding: 10px 15px;
+    border-radius: 35px;
+    border: none;
+}
+
 .main {
     background-color: cadetblue; /* testing */
     grid-row: 2 / -1;
