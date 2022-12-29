@@ -11,6 +11,8 @@
     --color-dark-variant: #677483;
     --color-background: #f6f6f9;
 
+    --card-border-radius: 2rem;
+
     --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
@@ -30,9 +32,16 @@
 body, html {
     height: 100% /* full height window */
 }
+button {
+    background-color: var(--color-primary);
+    color: white;
+}
+input {
+    background-color: var(--color-info-light);
+}
 
 .container {
-    background-color: aliceblue;
+    background-color: var(--color-background);
     height: 100%; /* full height window */
     /* grid container */
     display: grid;
@@ -44,7 +53,7 @@ body, html {
 }
 
 .sidebar {
-    background-color: aquamarine; /* testing */
+    background-color: var(--color-background); /* testing */
     padding: 10px;
     /* grid item */
     grid-row: 1 / -1;
@@ -86,7 +95,7 @@ body, html {
 
 
 .header {
-    background-color: burlywood; /* testing */
+    background-color: var(--color-background); /* testing */
     grid-row: 1;
     grid-column: 2 / -1;
     /* grid container */
@@ -180,11 +189,12 @@ body, html {
     grid-template-columns: 1fr;
 }
 .header-buttons .profile-buttons {
+    padding-right: 3rem;
     /* grid item */
     grid-column: 1;
     grid-row: 1;
     align-self: center;
-    justify-self: start;
+    justify-self: end;
 }
 .profile-buttons button {
     padding: 10px 15px;
@@ -193,7 +203,7 @@ body, html {
 }
 
 .main {
-    background-color: cadetblue; /* testing */
+    background-color: var(--color-background); /* testing */
     grid-row: 2 / -1;
     grid-column: 2 / -1;
     /* grid container */
@@ -206,7 +216,7 @@ body, html {
     padding: 15px;
 }
 .main .main-content-section {
-    background-color: greenyellow;
+    background-color: var(--color-background);
     grid-column: 1;
     grid-row: 1 / -1;
 }
@@ -231,6 +241,8 @@ body, html {
     gap: 35px;
 }
 .card {
-    background-color: blue;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--card-border-radius);
 }
 
