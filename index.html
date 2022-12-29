@@ -7,7 +7,7 @@
     <title>Admin Dashboard</title>
 
     <!-- icons and fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <!-- My static files -->
     <link rel="stylesheet" href="./style.css">
@@ -17,27 +17,47 @@
         <!-- My sidebar -->
         <div class="sidebar">
             <div class="sidebar-title">
-                <h1><i class="fa-solid fa-image"></i> My dashboard</h1>
+                <h1>
+                    <span class="material-symbols-rounded">dashboard</span>
+                    My dashboard
+                </h1>
             </div>
             <div class="sidebar-list">
                 <ul>
-                    <li> <i class="fa-solid fa-image"></i> Main</li>
-                    <li> <i class="fa-solid fa-image"></i> Profiles</li>
-                    <li> <i class="fa-solid fa-image"></i> My Lists</li>
-                    <li> <i class="fa-solid fa-image"></i> Inventory</li>
-                    <li> <i class="fa-solid fa-image"></i> Balance</li>
-                    <li> <i class="fa-solid fa-image"></i> Analytics</li>
+                    <li>
+                        <span class="material-symbols-rounded">home</span> <p>Main</p>
+                    </li>
+                    <li>
+                        <span class="material-symbols-rounded">groups</span> Profiles
+                    </li>
+                    <li>
+                        <span class="material-symbols-rounded">list_alt</span> My Lists
+                    </li>
+                    <li>
+                        <span class="material-symbols-rounded">inventory</span> Inventory
+                    </li>
+                    <li>
+                        <span class="material-symbols-rounded">balance</span> Balance
+                    </li>
+                    <li>
+                        <span class="material-symbols-rounded">show_chart</span> Analytics
+                    </li>
                 </ul>
             </div>
             <div class="sidebar-list">
                 <ul>
-                    <li> <i class="fa-solid fa-image"></i> Settings</li>
-                    <li> <i class="fa-solid fa-image"></i> Add Field</li>
+                    <li>
+                        <span class="material-symbols-rounded">settings</span> Settings
+                    </li>
+                    <li>
+                        <span class="material-symbols-rounded">add</span> Add Field
+                    </li>
                 </ul>
             </div>
             <div class="sidebar-list logout">
                 <ul>
-                    <li> <i class="fa-solid fa-image"></i> Logout</li>
+                    <li>
+                        <span class="material-symbols-rounded">logout</span> Logout</li>
                 </ul>
             </div>
         </div>
@@ -45,17 +65,20 @@
         <!-- Header -->
         <div class="header">
             <div class="searchbar">
-                <i class="fa-solid fa-magnifying-glass"></i> <input type="text">
+                <span class="material-symbols-rounded">search</span>
+                <input type="text">
             </div>
             <div class="profile">
-                <i class="fa-solid fa-image"></i>
+                <a href="">
+                    <span class="material-symbols-rounded">notifications_active</span>
+                </a>
                 <img src="./temp-resources/avatar1.webp" alt="user-image" class="fit">
-                <p>Steven Wolfram</p>
+                <p>Jane Praz</p>
             </div>
             <div class="profile-title">
                 <img src="./temp-resources/avatar1.webp" alt="user-image" class="fit">
                 <p>Hi there,</p>
-                <p>Morgan Oakley (@Morgan)</p>
+                <p>Jane Praz (@Jane)</p>
             </div>
             <div class="header-buttons">
                 <div class="profile-buttons">
