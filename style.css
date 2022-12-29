@@ -1,3 +1,7 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* variables */
 :root {
     --color-primary: #7380ec;
     --color-danger: #ff7782;
@@ -16,7 +20,7 @@
     --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
-
+/* General style */
 * {
     /* border: 1px solid red; */
     /* background-color: rgba(0, 0, 0, 0.2); */
@@ -30,16 +34,19 @@
     list-style: none;
 }
 body, html {
+    font-family: 'Poppins', sans-serif;
     height: 100% /* full height window */
 }
 button {
     background-color: var(--color-primary);
     color: white;
+    cursor: pointer;
 }
 input {
     background-color: var(--color-info-light);
 }
 
+/* Container style */
 .container {
     background-color: var(--color-background);
     height: 100%; /* full height window */
@@ -52,6 +59,7 @@ input {
     font-size: 1.1rem;
 }
 
+/* Sidebar style */
 .sidebar {
     background-color: var(--color-background); /* testing */
     padding: 10px;
