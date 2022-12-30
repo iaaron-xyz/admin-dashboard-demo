@@ -97,8 +97,9 @@ input {
 .sidebar-list ul {
     padding: 15px 10px 15px 0;
 }
-.sidebar-list ul li {
+.sidebar-list ul li a {
     padding: 10px 0 10px 10px;
+    border-left: 3px solid var(--color-background);
     /* flex container */
     display: flex;
     flex-direction: row;
@@ -347,3 +348,20 @@ input {
     border-radius: 2rem;
 }
 
+
+/* Hover effects */
+.sidebar-list ul a:hover {
+    background-color: var(--color-light);
+}
+.main-buttons ul a:hover {
+    color: var(--color-primary);
+    border-left: 3px solid var(--color-primary);
+}
+.settings-buttons ul a:hover {
+    color: var(--color-info-dark);
+    border-left: 3px solid var(--color-info-dark);
+}
+.logout ul a:hover {
+    color: var(--color-danger);
+    border-left: 3px solid var(--color-danger);
+}
